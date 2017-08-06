@@ -178,6 +178,12 @@ ul {
   padding-right: 16px; 
 }
 
+.type-disclaimer {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
 .type-anim-welcome {
   animation: typing 2.5s steps(34, end), showAnim 1s;
 }

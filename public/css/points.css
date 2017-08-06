@@ -1,0 +1,210 @@
+
+.animated-text .anim-points-1 {
+  animation: typing-points 1.5s;
+  top: 96px;
+}
+
+.animated-text .anim-points-2 {
+  top: 240px;
+  left: 192px;
+  animation: typing-points-2 2.5s;
+}
+
+.animated-text .anim-points-3 {
+  top: 128px;
+  left: 286px;
+  animation: typing-points-3 3.3s;
+}
+
+.animated-text .anim-points-4 {
+  top: 128px;
+  right: 320px;
+  animation: typing-points-4 2.2s;
+}
+
+.animated-text .anim-points-5 {
+  top: 420px;
+  left: 512px;
+  animation: typing-points-5 2.4s;
+}
+
+.animated-text .anim-points-6 {
+  top: 360px;
+  left: 256px;
+  animation: typing-points-6 2.8s;
+}
+
+.animated-text .anim-points-7 {
+  top: 224px;
+  right: 192px;
+  animation: typing-points-7 2.6s;
+}
+
+.animated-text .anim-points-8 {
+  top: 308px;
+  right: 256px;
+  animation: typing-points-8 3.2s;
+}
+
+.animated-text .anim-points-9 {
+  top: 92px;
+  left: 560px;
+  animation: typing-points-9 3.1s;
+}
+
+.animated-text .anim-points-10 {
+  top: 392px;
+  right: 320px;
+  animation: typing-points-10 3.3s;
+}
+
+
+@keyframes typing-points {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  50%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-2 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-3 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-4 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 186px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-5 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 186px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-6 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-7 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-8 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-9 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 163px;
+    padding: 8px 12px;
+  }
+}
+
+@keyframes typing-points-10 {
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  70%{
+    width: 0;
+    padding: 0;
+  }
+  100% {
+    width: 186px;
+    padding: 8px 12px;
+  }
+}
