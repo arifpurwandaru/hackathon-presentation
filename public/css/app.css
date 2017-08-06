@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  background: #00A4de;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  display: flex;
+}
+
+.section > div {
+  margin: auto;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.loading-item-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 96px;
+  width: 96px;
+  clip-path: circle(48px at center);
+  border-radius: 100%;
+  box-shadow: inset 0 0 8px rgba(0,0,0, 0.2) 
+}
+
+.loading-item{
+  /* background: #fafafa; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 12px rgba(0,0,0, 0.2) 
+}
+
+.hidden {
+  display: none!important; 
+}
+
+.hide-anim {
+  animation: hideAnim 0.5s;
+}
+
+.show-anim {
+  animation: showAnim 1s;
+} 
+
+.nav-cont{
+  position: absolute;
+  z-index: 10;
+  right: 64px;
+  bottom: 64px;
+  cursor: pointer;
+  display: flex;
+}
+
+.nav-cont .nav-left, .nav-cont .nav-right {
+  /* width: 64px; */
+  /* height: 64px; */
+  font-size: 48px;
+  padding: 8px 16px;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  align-items: center;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.nav-cont .nav-right {
+  border-radius: 0 8px 8px 0;
+}
+
+.nav-cont .nav-left:hover,
+.nav-cont .nav-right:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.nav-cont .nav-left {
+  border-radius: 8px 0 0 8px;
+}
+
+/* .nav-cont .nav-left:after, .nav-cont .nav-right:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.nav-cont .nav-left:after{
+  left: 0;
+  right: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0) 100%);
+} */
+
+.nav-cont .nav-left:hover:after{
+  right: 75%;
+}
+/* 
+.nav-cont .nav-right {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #fff;
+} */
+
+/* .nav-cont .nav-right:after{
+  left: 100%;
+  right: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0) 100%);
+}
+
+.nav-cont .nav-right:hover:after{
+  left: 75%;
+} */
+
+.textContainer{
+  display: block;  
+}
+
+.type {
+  display: inline-block;
+  position: relative;
+  letter-spacing: .1em;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 16px; 
+}
+
+.type-anim-welcome {
+  animation: typing 2.5s steps(34, end), showAnim 1s;
+}
+
+.type-anim-debit-card {
+  animation: typing 2.5s steps(38, end), showAnim 1s;
+}
+
+.type-anim-cashtag {
+  animation: typing 2.5s steps(54, end), showAnim 1s;
+}
+
+.type-anim-password {
+  animation: typing 4s steps(66, end), showAnim 1s;
+}
+
+.type-question {
+  animation: typing 3.5s steps(48, end), showAnim 1s;
+}
+
+.type-no-thanks {
+  animation: typing 2s steps(42, end), showAnim 1s;
+}
+
+.type-of-course {
+  animation: typing 2.4s steps(59, end), showAnim 1s;
+}
+
+.type-banking-reinvented {
+  animation: typing 2.2s steps(48, end), showAnim 1s;
+}
+
+.type-banking-reinvented-2{
+  animation: typing 3s steps(65, end), showAnim 1s;
+}
+
+.type-scan-barcode{
+  animation: typing 2s steps(49, end), showAnim 1s;
+}
+
+.type-confirm-transaction{
+  animation: typing 1.2s steps(27, end), showAnim 1s;
+}
+
+.type-voila{
+  animation: typing 1.2s steps(29, end), showAnim 1s;
+}
+
+.type-scan-barcode{
+  animation: typing 2s steps(49, end), showAnim 1s;
+}
+
+.type-jenius-points{
+  animation: typing 3.5s steps(91, end), showAnim 1s;
+}
+
+.type-jenius-isnit{
+  animation: typing 2s steps(16, end), showAnim 1s;
+}
+
+.xlText {
+  letter-spacing: .15em;
+  font-size: 32px;
+}
+
+.bigText {
+  letter-spacing: .15em;
+  font-size: 24px;
+}
+
+.medText {
+  letter-spacing: .15em;
+  font-size: 18px;
+}
+
+.type:before {
+  content: '';
+  display: block;
+  width: 12px;
+  border-bottom: 2px solid #faaf3d;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: blink-caret 0.75s step-end infinite;
+  transition: all;
+}
+
+.welcome-screen {
+
+}
+
+.thumb-container {
+  margin: auto;
+  position: relative;
+  margin-top: 128px;
+  width: 64px;
+  height: 64px;
+  transition: all 0.3s;
+  cursor: pointer;
+  animation: showAnimUpDelay 4s;
+}
+
+.thumb-container .icon-container {
+  margin: 4px;
+  /* background: #f57373; */
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.thumb-container:hover {
+  width: 72px;
+  height: 72px;
+}
+
+.thumb-pulse {
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 4px;
+  position: absolute;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  animation: pulsate 2s ease-out infinite;   
+  z-index: -2;
+}
+
+.thumb-pulse:after {
+  box-shadow: inset 0 0 4px rgba(64,64,64,0.1);
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.thumb-container:hover .thumb-pulse {
+  animation: none;
+  display: none;
+}
+
+.thumb-path {
+  transition: all 0.5s;
+  fill: #ccc;
+}
+
+.thumb-container:hover .thumb-path {
+  fill: #fff;
+}
+
+.intro-lane-2 {
+  animation-delay: 3s;
+}
+
+.intro-lane-3 {
+  animation-delay: 7s;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes hideAnim {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes showAnim {
+  0% { opacity: 0; left: -18px; }
+  100% { opacity: 1; left: 0; }
+}
+
+@keyframes showAnimUp {
+  0% { opacity: 0; bottom: -18px; }
+  100% { opacity: 1; bottom: 0; }
+}
+
+@keyframes showAnimUpDelay {
+  0% { opacity: 0; bottom: -18px; }
+  80% { opacity: 0; bottom: -18px; }
+  100% { opacity: 1; bottom: 0; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #faaf3d }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    transform: scale(1.7, 1.7);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}

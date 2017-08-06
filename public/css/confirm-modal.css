@@ -1,0 +1,300 @@
+
+.confirm-modal {
+  width: 450px;
+  height: 320px;
+  background: rgba(255,255,255,0.8);
+  padding: 6px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 4px 4px rgba(0,0,0,0.3);
+  animation: confirmModal 4s; 
+}
+
+@keyframes confirmModal {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1);
+  }
+}
+
+.confirm-modal:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #fff;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  border-radius: 6px;
+  bottom: 6px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  height: 192px;
+  border-radius: 8px;
+}
+
+.modal-content:before,
+.modal-content:after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+.modal-content:after {
+  top: 0;
+  height: 96px;
+  width: 96px;
+  background: #dadada;
+  border-radius: 8px;
+  animation: modalContent-1 4s;
+}
+
+@keyframes modalContent-1 {
+  0% {
+    height: 0;
+    border-radius: 0;
+  }
+  13% {
+    height: 0;
+  }
+  35% {
+    height: 96px;
+    border-radius: 0;
+  }
+  42% {
+    border-radius: 8px;
+  }
+}
+
+.modal-content:before {
+  top: 12px;
+  right: 24px;
+  height: 12px;
+  width: 208px;
+  background: #dadada;
+  border-radius: 6px;
+  animation: modalContent-2 4s;
+}
+
+@keyframes modalContent-2 {
+  0% {
+    width: 0;
+    border-radius: 0;
+  }
+  15% {
+    width: 0;
+  }
+  38% {
+    width: 208px;
+    border-radius: 0;
+  }
+  45% {
+    border-radius: 6px;    
+  }
+}
+
+.sample-modal-content {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  height: 128px;
+  width: 256px;
+  background: #dadada;
+  border-radius: 6px;
+  animation: modalContent-3 4s;
+}
+
+@keyframes modalContent-3 {
+  0% {
+    width: 0;
+    border-radius: 0;
+  }
+  20% {
+    width: 0;
+  }
+  40% {
+    width: 256px;
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 6px;    
+  }
+}
+
+.sample-modal-content:before,
+.sample-modal-content:after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.sample-modal-content:before {
+  bottom: -108px;
+  left: -96px;
+  right: 0;
+  border-radius: 12px;
+  background: #dadada;
+  height: 96px;
+  animation: modalContent-4 4s;
+}
+
+@keyframes modalContent-4 {
+  0% {
+    height: 0;
+    border-radius: 0;
+  }
+  35% {
+    height: 0;
+  }
+  50% {
+    height: 96px;
+    border-radius: 0;    
+  }
+  65% {
+    border-radius: 12px;    
+  }
+}
+
+.modal-check {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 6px;
+  background: rgba(128,128,128,0.5);
+  display: flex;
+  align-items: center;
+  animation: modalCheckBG 4s;
+}
+
+@keyframes modalCheckBG {
+  0% {
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    opacity: 0;
+  }
+  45% {
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    opacity: 0;
+  }
+  60% {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+  }
+}
+
+.modal-check:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  width: 30%;
+  margin: auto;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  animation: modalCheckBGContent 4s;
+}
+
+@keyframes modalCheckBGContent {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-check .modal-check-button {
+  margin: auto;
+  z-index: 1;
+  animation: modalCheckMark 4s;
+}
+
+.modal-check .modal-check-button i {
+  color: #63ca3a;
+  font-size: 108px;
+}
+
+@keyframes modalCheckMark {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  78% {
+    transform: scale(1);
+  }
+}
+
+.modal-button-wrap {
+  position: absolute;
+  bottom: 32px;
+  width: 192px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.modal-button {
+  align-content: center;
+  border-radius: 6px;
+  width: 64px;
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  background: #ccc;
+  border: 2px solid;
+  margin: auto;
+}
+
+.modal-button span {
+  font-size: 24px;
+}
+
+.modal-button.button-yes {
+  background: #8BB174;
+  border-color: #B5CA8D;
+}
+
+.modal-button.button-no {
+  background: #ce3f08;
+  border-color: #b33708;
+}
+
+.confirm-modal .cursor{
+
+}

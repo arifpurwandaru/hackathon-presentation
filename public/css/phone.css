@@ -1,0 +1,642 @@
+
+.animated-phone {
+
+}
+
+.animated-phone .scanner {
+  position: absolute;
+  top: 128px;
+  left: 32px;
+  right: 32px;
+  height: 112px;
+  background: rgba(255,0,0,0.3);
+  animation: scanner 5s;
+}
+
+.animated-phone .scanner:before,
+.animated-phone .scanner:after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: -6px;
+  right: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: #f00;
+  animation: scannerBar 5s;
+}
+
+@keyframes scannerBar{
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scanner{
+  0% {
+    left: 50%;
+    right: 50%;
+    height: 0;
+    top: 184px;
+  }
+  80% {
+    left: 50%;
+    right: 50%;
+  }
+  90% {
+    left: 32px;
+    right: 32px;
+    height: 0;
+    top: 184px;
+  }
+  100% {
+    left: 32px;
+    right: 32px;
+    height: 112px;
+    top: 128px;
+  }
+}
+
+.animated-phone .scanner:before {
+   top: -2px;
+}
+
+.animated-phone .scanner:after {
+   bottom: -2px;
+}
+
+.phone-frame {
+  position: absolute;
+  left: 96px;
+  top: 96px;
+  width: 280px;
+  height: 560px;
+  border-radius: 30px;
+  border: 5px solid #cacaca;
+  background: #fefefe;
+  animation: showFrame 5s;
+}
+
+@keyframes showFrame{
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 4px;
+    border-width: 0;
+  }
+  30% {
+    width: 280px;
+    height: 560px;
+    border-radius: 4px;
+    border-width: 0;
+  }
+  40% {
+    border-radius: 30px;
+    border-width: 0;
+  }
+  50% {
+    border-width: 0;
+  }
+  60% {
+    border-width: 5px;
+  }
+}
+
+.phone-frame:before,
+.phone-frame:after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.phone-frame:before {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  border: 3px solid #efefef;
+  background: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  animation: showButton 5s;
+}
+
+@keyframes showButton{
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  50% {
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    transform: scale(1);
+  }
+  60% {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+  }
+}
+
+.phone-frame:after {
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  background: #bbb;
+  top: -9px;
+  border-radius: 4px 4px 0 0;
+  right: 32px;
+  animation: lockButton 5s;
+}
+
+@keyframes lockButton {
+  0%{
+    width: 0;
+  }
+  60% {
+    width: 0;
+  }
+  65% {
+    width: 48px;
+  }
+}
+
+.phone-sides-1 {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+}
+
+.phone-sides-1:before,
+.phone-sides-1:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 5px;
+  height: 3px;
+  background: #fff;
+  animation: whitePad 5s;
+}
+
+.phone-sides-1:before{
+  left: -5px;
+}
+
+.phone-sides-1:after{
+  right: -5px;
+}
+
+.phone-sides-2 {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  right: 0;
+}
+
+.phone-sides-2:before,
+.phone-sides-2:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 5px;
+  height: 3px;
+  background: #fff;
+  animation: whitePad 5s;
+}
+
+.phone-sides-2:before{
+  left: -5px;
+}
+
+.phone-sides-2:after{
+  right: -5px;
+}
+
+@keyframes whitePad {
+  0%{
+    width: 0;
+  }
+  60% {
+    width: 0;
+  }
+  65% {
+    width: 5px;
+  }
+}
+
+.phone-sides-3 {
+  position: absolute;
+  height: 24px;
+  width: 4px;
+  left: -9px;
+  border-radius: 2px 0 0 2px;
+  top: 72px;
+  background: #bbb;
+  animation: silentButton 5.4s;
+}
+
+@keyframes silentButton {
+  0%{
+    height: 0;
+  }
+  60% {
+    height: 0;
+  }
+  65% {
+    height: 24px;
+  }
+}
+
+.phone-sides-3:before,
+.phone-sides-3:after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 4px;
+  border-radius: 4px 0 0 4px;
+  background: #bbb;
+}
+
+.phone-sides-3:before{
+  top: 48px;
+  animation: volumeButton 5.7s;
+}
+
+.phone-sides-3:after{
+  top: 92px;
+  animation: volumeButton 6s;
+}
+
+@keyframes volumeButton {
+  0%{
+    height: 0;
+  }
+  60% {
+    height: 0;
+  }
+  65% {
+    height: 24px;
+  }
+}
+
+.phone-acc {
+  position: absolute;
+  width: 48px;
+  height: 6px;
+  border-radius: 3px;
+  background: #ccc;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 42px;
+  animation: phoneAcc 5.3s;
+}
+
+.phone-acc:before,
+.phone-acc:after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.phone-acc:before{
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #aaa;
+  left: -16px;
+  animation: phoneAcc 5.5s;
+}
+
+.phone-acc:after{
+  top: -24px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #999;
+  animation: phoneAcc 5.8s;
+}
+
+@keyframes phoneAcc {
+  0%{
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  65% {
+    transform: scale(1);
+  }
+}
+
+.phone-screen {
+  position: absolute;
+  top: 72px;
+  bottom: 72px;
+  left: 12px;
+  right: 12px;
+  background: #444;
+  border-radius: 4px;
+  animation: showScreen 5s;
+}
+
+@keyframes showScreen{
+  0% {
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+  }
+  30% {
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+  }
+  40% {
+    top: 72px;
+    bottom: 72px;
+    left: 12px;
+    right: 12px;
+    border-radius: 0px;
+  }
+  50% {
+    border-radius: 4px;
+  }
+}
+
+.phone-screen:before{
+  position: absolute;
+  content: '';
+  display: block;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #fff;
+  animation: showScreenContent 5s;
+  background: #fff;
+}
+
+@keyframes showScreenContent{
+  0% {
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+  }
+  45% {
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;    
+  }
+  60% {
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    opacity: 1;
+  }
+}
+
+.phone-barcode {
+  position: absolute;
+  top: 64px;
+  height: 96px;
+  width: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+}
+
+.phone-barcode:before,
+.phone-barcode:after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.barcode-line {
+  flex-grow: 1;
+  margin: 0 4px;
+  position: relative;
+}
+
+.barcode-line:before,
+.barcode-line:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+}
+
+.barcode-line-1 {
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-left: 1px solid #222;
+  border-right: 6px solid #222;
+  animation: barcode-var-2 5.2s;
+}
+
+.barcode-line-1:before {
+  left: 8px;
+  width: 10px;
+  border-left: 3px solid #222;
+  border-right: 8px solid #222;
+  animation: barcode-var-1 5s;
+}
+
+.barcode-line-1:after {
+  left: 3px;
+  width: 8px;
+  border-left: 3px solid #222;
+  border-right: 2px solid #222;
+  animation: barcode-var-1 5.4s;
+}
+
+.barcode-line-2 {
+  left: 12px;
+  width: 12px;
+  height: 100%;
+  border-left: 3px solid #222;
+  border-right: 6px solid #222;
+  animation: barcode-var-1 5.7s;
+}
+
+.barcode-line-2:before {
+  left: -18px;
+  width: 4px;
+  border-left: 3px solid #222;
+  border-right: 6px solid #222;
+  animation: barcode-var-1 5s;
+}
+
+.barcode-line-2:after {
+  left: 14px;
+  width: 14px;
+  border-left: 3px solid #222;
+  border-right: 3px solid #222;
+  animation: barcode-var-2 5.4s;
+}
+
+.barcode-line-3 {
+  width: 4px;
+  height: 100%;
+  border-left: 3px solid #222;
+  border-right: 6px solid #222;
+  animation: barcode-var-2 6s;
+}
+
+.barcode-line-3:before {
+  left: -33px;
+  width: 11px;
+  border-left: 3px solid #222;
+  border-right: 1px solid #222;
+  animation: barcode-var-1 6s;
+}
+
+.barcode-line-3:after {
+  left: 7px;
+  width: 10px;
+  border-left: 8px solid #222;
+  border-right: 3px solid #222;
+  animation: barcode-var-2 5.8s;
+}
+
+.barcode-line-4 {
+  width: 12px;
+  height: 100%;
+  border-left: 3px solid #222;
+  border-right: 6px solid #222;
+  animation: barcode-var-2 5.7s;
+}
+
+.barcode-line-4:before {
+  left: -10px;
+  width: 14px;
+  border-left: 2px solid #222;
+  border-right: 3px solid #222;
+  animation: barcode-var-2 5.8s;
+}
+
+.barcode-line-4:after {
+  left: 14px;
+  width: 9px;
+  border-left: 5px solid #222;
+  border-right: 3px solid #222;
+  animation: barcode-var-2 5.3s;
+}
+
+@keyframes barcode-var-1 {
+  0%{
+    transform: scale(0);
+  }
+  70%{
+    transform: scale(0);
+  }
+  75%{
+    transform: scale(1);
+  }
+}
+
+@keyframes barcode-var-2 {
+  0%{
+    transform: scale(0);
+  }
+  73%{
+    transform: scale(0);
+  }
+  78%{
+    transform: scale(1);
+  }
+}
+
+.phone-content {
+  position: absolute;
+  display: block;
+  width: 212px;
+  height: 132px;
+  border-radius: 4px 4px 0 0;
+  background: #dedede;
+  bottom: 4px;
+  left: 16px;
+  animation: phoneContent 5s;
+}
+
+@keyframes phoneContent {
+  0%{
+    height: 0;
+  }
+  60%{
+    height: 0;
+  }
+  70%{
+    height: 132px;
+  }
+}
+
+.phone-content:before,
+.phone-content:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #dedede;
+}
+
+.phone-content:before {
+  position: absolute;
+  display: block;
+  width: 192px;
+  height: 16px;
+  border-radius: 8px;
+  top: -32px;
+  animation: phoneContentSmall 5.5s;
+}
+
+.phone-content:after {
+  position: absolute;
+  display: block;
+  width: 144px;
+  height: 12px;
+  border-radius: 6px;
+  top: -56px;
+  animation: phoneContentSmall 6s;
+}
+
+@keyframes phoneContentSmall {
+  0%{
+    transform: scale(0);
+  }
+  60%{
+    transform: scale(0);
+  }
+  70%{
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,743 @@
+.debit-card {
+
+}
+
+.debit-card .animated-container {
+
+}
+
+.debit-card .type {
+  position: relative; 
+  top: 156px;
+}
+
+.debit-card .animated-objects {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.debit-card-item {
+  position: absolute;
+  height: 256px;
+  width: 192px;
+  bottom: 128px;
+  left: 128px;
+  border-radius: 12px;
+}
+
+.debit-card-item:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.debit-card-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 8px;
+  bottom: 0;
+  left: 8px;
+  right: 0;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  z-index: -1;
+  animation: debitCardShadow 4.5s;
+} 
+
+.debit-card-item.card-1:after {
+  background: #73d252;
+}
+
+.debit-card-item.card-1 .prop-1 {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  width: 64px;
+  border-radius: 16px 16px 0 0;
+  top: 48px;
+  bottom: 0px;
+  /* background: #1aa4c7; */
+}
+
+.debit-card-item.card-1 .prop-2 {
+  position: absolute;
+  bottom: 40px;
+  right: 32px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #f7c909;
+}
+
+.debit-card-item.card-1 .prop-3 {
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 96px;
+  border-radius: 8px;
+  bottom: 24px;
+  background: rgba(255,255,255,0.9);
+}
+
+.debit-card-item.card-1 .prop-3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 56px;
+  border-radius: 8px;
+  bottom: 42px;
+  background: rgba(255,255,255,0.9);
+}
+
+.debit-card-item.card-1 .prop-3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 32px;
+  border-radius: 8px;
+  bottom: 0;
+  background: rgba(255,255,255,0.9);
+}
+
+.debit-card-item.card-2:after {
+  background: #8335a5;
+}
+
+.debit-card-item.card-2 .prop-1 {
+  position: absolute;
+  width: 64px;
+  border-radius: 0 0 16px 16px;
+  bottom: 48px;
+  right: 24px;
+  top: 0px;
+  background: #1aa4c7;
+}
+
+.debit-card-item.card-2 .prop-2 {
+  position: absolute;
+  top: 40px;
+  left: 32px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #f7c909;
+}
+
+.debit-card-item.card-2 .prop-3 {
+  position: absolute;
+  width: 16px;
+  right: 64px;
+  height: 96px;
+  border-radius: 8px;
+  top: 24px;
+  background: rgba(255,255,255,0.9);
+}
+
+.debit-card-item.card-2 .prop-3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 56px;
+  border-radius: 8px;
+  bottom: 42px;
+  background: rgba(255,255,255,0.9);
+}
+
+.debit-card-item.card-2 .prop-3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 32px;
+  border-radius: 8px;
+  bottom: 0;
+  background: rgba(255,255,255,0.9);
+}
+
+.debit-card-item.card-3:after {
+  background: #fd8424;
+}
+
+.debit-card-item.card-3 .prop-1 {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.debit-card-item.card-3 .prop-1:before, .debit-card-item .prop-1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.debit-card-item.card-3 .prop-1:before {
+  background: #ccc;
+  top: -64px;
+  animation: debitCardCircles 4s;
+}
+
+.debit-card-item.card-3 .prop-1:after {
+  background: #fff;
+  top: -40px;
+  animation: debitCardCircles 4.5s;
+}
+
+.debit-card-item.card-3 .prop-2 {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  top: 0;
+  width: 40px;
+  background: #222;
+  animation: debitCardStripe 4s;
+}
+
+.debit-card-item.card-3 .prop-3 {
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 96px;
+  border-radius: 8px;
+  top: 24px;
+  background: rgba(255,255,255,0.9);
+  animation: debitCardProp 4s;
+}
+
+.debit-card-item.card-3 .prop-3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 56px;
+  border-radius: 8px;
+  bottom: 42px;
+  background: rgba(255,255,255,0.9);
+  animation: debitCardPropBefore 4.5s; 
+}
+
+.debit-card-item.card-3 .prop-3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  left: 32px;
+  height: 32px;
+  border-radius: 8px;
+  bottom: 0;
+  background: rgba(255,255,255,0.9);
+  animation: debitCardPropAfter 4.5s; 
+}
+
+.debit-card-item.card-1 {
+  transform: rotate(-15deg) translate(108px, 72px);
+  animation: debitCardContainerDelay 3.5s, rotateCard-1 6s; 
+}
+
+.debit-card-item.card-2 {
+  transform: rotate(15deg) translate(72px, -24px);
+  animation: debitCardContainerDelay 3.5s, rotateCard-2 6s;
+}
+
+.debit-card-item.card-3 {
+  transform: rotate(-5deg) translate(-12px, -8px);
+  animation: debitCardContainerDelay 3s, rotateCard-3 6s;
+}
+
+.cashier-machine {
+  position: absolute;
+  top: 128px;
+  left: 284px;
+  animation: cashierScale 6s;
+  transform: scale(1.4);
+}
+
+@keyframes cashierScale {
+  0% { transform: scale(1); }
+  90% { transform: scale(1); }
+  100% { transform: scale(1.4); }
+}
+
+.cashier-register {
+  width: 320px;
+  height: 84px;
+  background: #d3d1d4;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+  animation: cashierRegister 1.5s;
+}
+
+@keyframes cashierRegister {
+  0% { opacity: 0; width: 0; border-radius: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 1; width: 320px; border-radius: 12px 12px 0 0; }
+}
+
+.cashier-register:before{
+  content: '';
+  display: block;
+}
+
+.cashier-register::before{
+  position: absolute;
+  display: block;
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 8px;
+  background: #a7a8ac;
+  animation: cashierRegisterBefore 2s;
+}
+
+@keyframes cashierRegisterBefore {
+  0% { left: 0; right: 100%; border-radius: 0; }
+  50% { left: 0; right: 100%; border-radius: 0; }
+  100% { left: 12px; right: 12px; border-radius: 8px; }
+}
+
+.cashier-slot {
+
+}
+
+.cashier-slot:before,
+.cashier-slot:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.cashier-slot:before{
+  top: 36px;
+  left: 32px;
+  height: 12px;
+  border-radius: 12px;
+  background: #4c4848;
+  width: 96px;
+  animation: cashierSlotBefore 2s;
+}
+
+@keyframes cashierSlotBefore {
+  0% { width: 0; border-radius: 0; }
+  50% { width: 0; border-radius: 0; }
+  100% { width: 96px; border-radius: 12px; }
+}
+
+.cashier-slot:after{
+  top: 32px;
+  right: 40px;
+  height: 20px;
+  border-radius: 12px;
+  background: #d1d2d4;
+  width: 20px;
+  animation: cashierSlotAfter 2.5s;
+}
+
+@keyframes cashierSlotAfter {
+  0% { transform: scale(0) }
+  75% { transform: scale(0) }
+  100% { transform: scale(1) }
+}
+
+.cashier-body {
+  height: 188px;
+  background: #bb512a;
+  margin: 0 12px;
+  border-radius: 24px 24px 0 0;
+  position: relative;
+  border-bottom: 16px solid #a54219;
+  animation: cashierBody 1.5s ease-in-out;
+}
+
+@keyframes cashierBody {
+  0% { opacity: 0; height: 0; border-radius: 0; border-bottom-width: 0; }
+  50% { opacity: 1; border-bottom-width: 0;}
+  100% { opacity: 1; height: 172px; border-radius: 24px 24px 0 0; border-bottom-width: 16px;}
+}
+
+.cashier-body:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  top: 12px;
+  border-radius: 24px;
+  background: #f9efd4;
+}
+
+.cashier-keyboard {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  height: 72px;
+  background: #505050;
+  border-radius: 0 0 24px 24px;
+  animation: cashierKeyboard 3s ease-in-out;
+}
+
+@keyframes cashierKeyboard {
+  0% { opacity: 0; height: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 1; height: 72px; }
+}
+
+.cashier-keyboard:before,
+.cashier-keyboard:after {
+  content: '';
+  display: block;
+}
+
+.cashier-keys {
+  position: absolute;
+  width: 28px;
+  height: 12px;
+  border-radius: 6px;
+  background: #f9efd4;
+}
+
+.cashier-keys:before,
+.cashier-keys:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 12px;
+  border-radius: 6px;
+  background: #f9efd4;
+}
+
+.cashier-keys.keys-1 {
+  top: 8px;
+  left: 8px;
+  animation: cashierKeys-1 3.5s ease-in-out;
+}
+
+.cashier-keys.keys-1:before {
+  top: 18px;
+  left: 18px;
+  animation: cashierKeys-2 3.5s ease-in-out;
+}
+
+.cashier-keys.keys-1:after {
+  top: 0px;
+  left: 36px;
+  width: 40px;
+  animation: cashierKeys-3 4s ease-in-out;
+}
+
+.cashier-keys.keys-2 {
+  top: 26px;
+  left: 64px;
+  animation: cashierKeys-2 4.5s ease-in-out;
+}
+
+.cashier-keys.keys-2:before {
+  top: 18px;
+  left: -18px;
+  width: 112px;
+  animation: cashierKeys-3 4.5s ease-in-out;
+}
+
+.cashier-keys.keys-2:after {
+  top: 0px;
+  left: 36px;
+  width: 40px;
+  animation: cashierKeys-1 3s ease-in-out;
+}
+
+.cashier-keys.keys-3 {
+  top: 8px;
+  left: 92px;
+  width: 56px;
+  animation: cashierKeys-3 4s ease-in-out;
+}
+
+.cashier-keys.keys-3:before {
+  top: 18px;
+  left: 54px;
+  animation: cashierKeys-2 3.5s ease-in-out;
+}
+
+.cashier-keys.keys-3:after {
+  top: 0px;
+  left: 64px;
+  animation: cashierKeys-3 3.5s ease-in-out;
+}
+
+.cashier-keys.keys-4 {
+  top: 8px;
+  left: 192px;
+  animation: cashierKeys-1 4s ease-in-out;
+}
+
+.cashier-keys.keys-4:before {
+  top: 18px;
+  left: -10px;
+  width: 56px;
+  animation: cashierKeys-3 3.5s ease-in-out;
+}
+
+.cashier-keys.keys-4:after {
+  top: 18px;
+  left: 54px;
+  width: 12px;
+  animation: cashierKeys-2 4s ease-in-out;
+}
+
+.cashier-keys.keys-5 {
+  top: 8px;
+  left: 228px;
+  animation: cashierKeys-1 3s ease-in-out;
+}
+
+.cashier-keys.keys-5:before {
+  top: 36px;
+  right: 8px;
+  width: 46px;
+  animation: cashierKeys-2 3.5s ease-in-out;
+}
+
+.cashier-keys.keys-5:after {
+  top: 36px;
+  right: 60px;
+  width: 32px;
+  animation: cashierKeys-3 3.5s ease-in-out;
+}
+
+@keyframes cashierKeys-1 {
+  0% { transform: scale(0) }
+  80% { transform: scale(0) }
+  100% { transform: scale(1) }
+}
+
+@keyframes cashierKeys-2 {
+  0% { transform: scale(0) }
+  85% { transform: scale(0) }
+  100% { transform: scale(1) }
+}
+
+@keyframes cashierKeys-3 {
+  0% { transform: scale(0) }
+  90% { transform: scale(0) }
+  100% { transform: scale(1) }
+}
+
+.cashier-top {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+}
+
+.cashier-top:before,
+.cashier-top:after {
+  content: '';
+  display: block;
+}
+
+.cashier-note {
+  position: relative;
+  left: 24px;
+  width: 56px;
+  border-radius: 12px;
+  height: 12px;
+  background: #cebd8f;
+  animation: cashierNoteAfter 5s ease-in-out;
+}
+
+.cashier-note:before,
+.cashier-note:after {
+  content: '';
+  display: block;
+}
+
+.cashier-note:before {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 0;
+  height: 72px;
+  background: #fff;
+  animation: cashierNoteBefore 6.5s ease-in-out;
+}
+
+@keyframes cashierNoteBefore {
+  0% { height: 0; }
+  90% { height: 0; }
+  98% { height: 80px; }
+  100% { height: 72px; }
+}
+
+.cashier-note:after {
+  position: absolute;
+  width: 56px;
+  height: 6px;
+  bottom: 0;
+  border-radius: 0 0 12px 12px;
+  background: #d8c699;
+  animation: cashierNoteAfter 5s ease-in-out;
+}
+
+@keyframes cashierNoteAfter {
+  0% { width: 0; }
+  90% { width: 0; }
+  100% { width: 56px; }
+}
+
+.cashier-sum {
+  position: absolute;
+  right: 32px;
+  height: 48px;
+  width: 128px;
+  background: #e1d8c0;
+  bottom: -12px;
+  border-radius: 8px;
+  animation: cashierSum 4s ease-in-out;
+}
+
+@keyframes cashierSum {
+  0% { width: 0; }
+  80% { width: 0; }
+  100% { width: 128px; }
+}
+
+.cashier-sum:before,
+.cashier-sum:after {
+  content: '';
+  display: block;
+}
+
+.cashier-num {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 12px;
+  right: 8px;
+  border-radius: 4px;
+  background: #444;
+  display: flex;
+  align-items: center;
+  animation: cashierNum 4.5s ease-in-out;
+}
+
+@keyframes cashierNum {
+  0% { left: 0; right: 100%; }
+  80% { left: 0; right: 100%; }
+  100% { left: 12px; right: 8px; }
+}
+
+.cashier-num:before,
+.cashier-num:after {
+  content: '';
+  display: block;
+}
+
+.cashier-num:after {
+  content: '$ 42.00';
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  left: 12px;
+  animation: cashierNumText 5.5s steps(8, end);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes cashierNumText {
+  0% { width: 0; }
+  90% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes debitCardContainer {
+  /* 0% { background: #faaf3d; }
+  60% { background: #faaf3d; }
+  100% { background: #f94f1c; } */
+  0% { opacity: 0; }
+  60% { opacity: 0; }
+  80% { opacity: 1; } 
+  100% { opacity: 1; } 
+}
+
+@keyframes debitCardContainerDelay {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; } 
+}
+
+@keyframes debitCardShadow {
+  0% { opacity: 0 }
+  80% { opacity: 0 }
+  100% { opacity: 1 }
+} 
+ 
+@keyframes debitCardCircles {
+  0% { transform: scale(0, 0) }
+  70% { transform: scale(0, 0) }
+  100% { transform: scale(1, 1) }
+}
+
+@keyframes debitCardProp {
+  0% { height: 0 }
+  70% { height: 0 }
+  100% { height: 96px }
+}
+
+@keyframes debitCardPropBefore {
+  0% { height: 0 }
+  80% { height: 0 }
+  100% { height: 56px }
+}
+
+@keyframes debitCardPropAfter {
+  0% { bottom: 42px; height: 0; }
+  80% { bottom: 42px; height: 0; }
+  100% { bottom: 0; height: 32px; }
+}
+
+@keyframes debitCardStripe {
+  0% { bottom: 100% }
+  60% { bottom: 100% }
+  100% { bottom: 0 }
+} 
+
+@keyframes rotateCard-1 {
+  0% { transform: rotate(0) translate(0, 0); }
+  80% { transform: rotate(0) translate(0, 0); }
+  100% { transform: rotate(-15deg) translate(108px, 72px); }
+}
+
+@keyframes rotateCard-2 {
+  0% { transform: rotate(0) translate(0, 0); }
+  80% { transform: rotate(0) translate(0, 0); }
+  100% { transform: rotate(15deg) translate(72px, -24px); }
+}
+
+@keyframes rotateCard-3 {
+  0% { transform: rotate(0) translate(0, 0); }
+  80% { transform: rotate(0) translate(0, 0); }
+  100% { transform: rotate(-5deg) translate(-12px, -8px); }
+} 
